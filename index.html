@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="./favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="./assets/font/font.css">
 </head>
@@ -29,18 +30,14 @@
                 <img src="./assets/images/logo.svg" alt="Gabriel home" width="40" height="40">
             </a>
 
-            <button class="nav-open-btn" aria-label="open menu">
+            <button class="nav-open-btn" aria-label="open menu" data-navbar-toggler>
                 <img src="./assets/images/menu.svg" width="17" height="17" alt="menu icon">
             </button>
 
-            <nav class="navbar active" data-navbar>
+            <nav class="navbar" data-navbar>
 
                 <div class="navbar-top">
-                    <a href="" class="logo">
-                        <img src="./assets/images/logo.svg" width="40" height="40" alt="Gabriel home" class="img">
-                    </a>
-
-                    <button class="nav-close-btn" aria-label="close-menu">
+                    <button class="nav-close-btn" aria-label="close-menu" data-navbar-link>
                         <span class="span one"></span>
                         <span class="span two"></span>
                     </button>
@@ -49,53 +46,147 @@
                 <ul class="navbar-list">
 
                     <li class="navbar-item">
-                        <a href="#home" class="navbar-link">Home</a>
+                        <a href="#home" class="navbar-link" data-navbar-link>Home</a>
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#gallery" class="navbar-link">Gallery</a>
+                        <a href="#gallery" class="navbar-link" data-navbar-link>Gallery</a>
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#about" class="navbar-link">About</a>
+                        <a href="#about" class="navbar-link" data-navbar-link>About</a>
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#services" class="navbar-link">Services</a>
+                        <a href="#services" class="navbar-link" data-navbar-link>Services</a>
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#portfolio" class="navbar-link">portfolio</a>
+                        <a href="#portfolio" class="navbar-link" data-navbar-link>portfolio</a>
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#contact us" class="navbar-link">Contact Us</a>
+                        <a href="#contact us" class="navbar-link" data-navbar-link>Contact Us</a>
                     </li>
-
                 </ul>
-
-                <button class="login-btn">
-                    <img src="./assets/images/user.svg" width="21" height="21" alt="user icon">
-
-                    <span class="span">Login</span>
-                </button>
-
-                <p class="navbar-title">My Address</p>
-
-                <address class="navbar-text">
-                    Loiusiana, Hulu, Avenue
-                </address>
-
-                <p class="navbar-text">
-                    Urgent issue > call us at
-                    <a href="tel:+2348085895880" class="contact-link">08085895880</a>
-                </p>
-
             </nav>
 
-            <div class="overlay" data-nav-toogler></div>
+            <div class="overlay" data-nav-toggler data-overlay></div>
         </div>
     </header>
+
+    <main>
+        <article>
+            <section class="section hero" id="hero" aria-label="home">
+                <div class="hero-container">
+
+                    <img src="./assets/images/hero-banner.png" width="322" height="322" alt="" class="hero-banner">
+
+                    <div class="hero-content">
+
+                        <h1 class="h1 hero-title">Gabriel Isuekebho</h1>
+
+                        <div class="wrapper h2">
+                            <strong class="strong" data-letter-effect>Frontend Engineer</strong>
+                            <strong class="strong" data-letter-effect>Backend Engineer</strong>
+                            <strong class="strong" data-letter-effect>FullStack Developer</strong>
+                        </div>
+
+                        <p class="hero-text">3+ years of Experience</p>
+                    </div>
+
+                </div>
+
+                <img src="./assets/images/hero-shape.svg" width="211" height="189" alt="" class="shape">
+            </section>
+        </article>
+
+        <section class="about-container">
+            <div class="about">
+                <img src="./assets/images/hero-banner.png" width="298" height="298" alt="" class="about-banner">
+
+                <div class="about-writeup">
+                    <h1>About <strong>Me</strong></h1>
+                    <p class="p">FullStack Engineer</p>
+                    <p class="p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Fugit asperiores ipsum vero quis possimus iure veniam ea
+                        rem officiis consequatur? Recusandae repudiandae officia
+                        dignissimos sint libero hic impedit, unde asperiores
+                        maiores quas, in dolores aut?
+                    </p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="service-container">
+                <h1>My <strong>Services</strong></h1>
+                <div class="service-cards">
+                    <div class="service-box">
+                        <i class='bx bx-code-alt'></i>
+                        <h1>Frontend Development</h1>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Fugiat quis rem nesciunt nobis ab! Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                            neque.
+                        </p>
+                    </div>
+
+                    <div class="service-box">
+                        <i class='bx bxl-python'></i>
+                        <h1>Backend Development</h1>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Fugiat quis rem nesciunt nobis ab! Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                            neque.
+                        </p>
+                    </div>
+
+                    <div class="service-box">
+                        <i class='bx bx-edit-alt'></i>
+                        <h1>Project Management</h1>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Fugiat quis rem nesciunt nobis ab! Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                            neque.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-container">
+                <h1 class="project-header">My <strong>Projects</strong></h1>
+                <div class="projects desktop">
+                    <img src="./images/portfolio1.jpg" alt="" class="img">
+                    <img src="./images/portfolio2.jpg" alt="" class="img">
+                    <img src="./images/portfolio3.jpg" alt="" class="img">
+                    <img src="./images/portfolio4.jpg" alt="" class="img">
+                    <img src="./images/portfolio5.jpg" alt="" class="img">
+                    <img src="./images/portfolio6.jpg" alt="" class="img">
+                </div>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact">
+                    <h1>Contact <strong>Me!</strong></h1>
+                    <form action="#" class="contact-me">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Email Address">
+                        <input type="text" placeholder="Mobile Number">
+                        <input type="text" placeholder="Email Subject">
+                        <input class="fifth-input" type="text" placeholder="">
+                    </form>
+                </div>
+                <a href="#" class="btn">Send</a>
+            </div>
+
+        </section>
+    </main>
+
+
 
     <script src="./assets/js/script.js"></script>
 </body>
