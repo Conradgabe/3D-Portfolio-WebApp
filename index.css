@@ -656,6 +656,131 @@ input {
   margin: 1em 0 2em;
 }
 
+@media (max-width: 437px) {
+  .hero-container {
+    padding-left: 0.2em;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero-container {
+    padding-left: 0.7em;
+  }
+
+  html {
+    width: 101%;
+  }
+}
+
+@media (max-width: 416px) {
+  .hero-container {
+    padding-left: 1.8em;
+  }
+
+  html {
+    width: 102%;
+  }
+}
+
+@media (max-width: 405px) {
+  .hero-container {
+    padding-left: 2.2em;
+  }
+
+  html {
+    width: 101%;
+  }
+}
+
+@media (max-width: 397px) {
+  .hero-container {
+    padding-left: 2.5em;
+  }
+
+  html {
+    width: 103%;
+  }
+}
+
+@media (max-width: 378px) {
+  .hero-container {
+    padding-left: 3em;
+  }
+
+  html {
+    width: 104%;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-container {
+    padding-left: 5em;
+  }
+
+  html {
+    width: 104%;
+  }
+}
+
+@media (max-width: 353px) {
+  .hero-container {
+    padding-left: 6em;
+  }
+
+  html {
+    width: 102%;
+  }
+}
+
+@media (max-width: 343px) {
+  .hero-container {
+    padding-left: 6em;
+  }
+
+  html {
+    width: 102%;
+  }
+}
+
+@media (max-width: 329px) {
+  .hero-container {
+    padding-left: 6em;
+  }
+
+  html {
+    width: 109%;
+  }
+}
+
+@media (max-width: 322px) {
+  .hero-container {
+    padding-left: 6em;
+  }
+
+  html {
+    width: 109%;
+  }
+}
+
+@media (max-width: 317px) {
+  .hero-container {
+    padding-left: 6em;
+  }
+
+  html {
+    width: 109%;
+  }
+}
+@media (max-width: 312px) {
+  .hero-container {
+    padding-left: 6.1em;
+  }
+
+  html {
+    width: 109%;
+  }
+}
+
 @media (min-width: 670px) {
   .contact-me {
     display: grid;
@@ -690,7 +815,7 @@ input {
 
   .contact-me {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 23em 23em;
     grid-template-rows: auto auto auto;
 
     align-items: center;
@@ -703,8 +828,8 @@ input {
     }
   }
 
-  input {
-    width: 29em;
+  .contact-me input {
+    width: 23em;
     height: 5em;
     border: none;
     border-radius: 1em;
@@ -714,7 +839,7 @@ input {
 
     &:nth-of-type(5) {
       height: 17em;
-      width: 62em;
+      width: 45em;
     }
   }
 
@@ -724,6 +849,7 @@ input {
     grid-template-rows: auto auto;
     column-gap: 10px;
     margin: 0 2em;
+    justify-items: left;
   }
 
   .service-box {
@@ -743,15 +869,10 @@ input {
     }
   }
 
-  .service-cards .service-box {
-    width: 100%;
-    height: auto;
-  }
-
   .service-cards {
     text-align: center;
     background-color: var(--bg-color);
-    padding: 1em;
+    padding-left: 0;
     transition: 0.5s ease;
   }
 }
