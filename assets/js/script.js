@@ -96,3 +96,27 @@ const setLetterEffect = function () {
 };
 
 window.addEventListener("load", setLetterEffect);
+
+// Detect when element enters the viewport
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function checkVisibility() {
+  const elements = document.querySelectorAll(".slide-in");
+  elements.forEach((el) => {
+    if (isElementInViewport(el)) {
+      el.classList.add("visible");
+    }
+  });
+}
+
+window.addEventListener("scroll", checkVisibility);
+window.addEventListener("load", checkVisibility);

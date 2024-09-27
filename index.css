@@ -453,6 +453,7 @@ body.active {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  margin-bottom: 1.6em;
 }
 
 .btn {
@@ -494,10 +495,15 @@ body.active {
   border: 0.2em solid whitesmoke;
   border-radius: 1em;
   transition: 0.5s ease;
-
+  transform: translateX(200%);
   h1 {
     font-size: 2.5rem;
   }
+}
+
+.service-box.visible {
+  transform: translateX(0);
+  transition: transform 1s;
 }
 
 .service-box i {
