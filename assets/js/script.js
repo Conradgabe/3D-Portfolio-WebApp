@@ -97,26 +97,49 @@ const setLetterEffect = function () {
 
 window.addEventListener("load", setLetterEffect);
 
-// Detect when element enters the viewport
+// function isElementInViewport(el) {
+//   const rect = el.getBoundingClientRect();
+//   console.log("slide-in2 rect:", rect);
+//   return (
+//     rect.top >= 0 &&
+//     rect.left >= 0 &&
+//     rect.bottom <=
+//       (window.innerHeight || document.documentElement.clientHeight) &&
+//     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//   );
+// }
+
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
+  console.log("slide-in2 rect:", rect);
+
   return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.bottom > 0 &&
+    rect.left < (window.innerWidth || document.documentElement.clientWidth) &&
+    rect.right > 0
   );
 }
 
 function checkVisibility() {
   const elements = document.querySelectorAll(".slide-in");
+  const elementsTwo = document.querySelectorAll(".slide-in2");
+
   elements.forEach((el) => {
     if (isElementInViewport(el)) {
       el.classList.add("visible");
+    } else {
+      el.classList.remove("visible");
+    }
+  });
+
+  elementsTwo.forEach((el) => {
+    if (isElementInViewport(el)) {
+      el.classList.add("active");
+    } else {
+      el.classList.remove("ative");
     }
   });
 }
-
 window.addEventListener("scroll", checkVisibility);
 window.addEventListener("load", checkVisibility);

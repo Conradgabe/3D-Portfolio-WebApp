@@ -494,16 +494,19 @@ body.active {
   padding: 0 2em;
   border: 0.2em solid whitesmoke;
   border-radius: 1em;
-  transition: 0.5s ease;
-  transform: translateX(200%);
-  h1 {
-    font-size: 2.5rem;
-  }
+  transition: all 1s ease-in-out;
 }
 
-.service-box.visible {
+.service-box h1 {
+  font-size: 2.5rem;
+}
+
+.slide-in {
+  transform: translateX(100vw);
+}
+
+.slide-in.visible {
   transform: translateX(0);
-  transition: transform 1s;
 }
 
 .service-box i {
@@ -550,6 +553,15 @@ body.active {
 /* .project-box:hover .img1 {
   transform: scale(1.1);
 } */
+
+.slide-in2 {
+  transform: translateX(100vw);
+  transition: all 1s ease-in-out;
+}
+
+.slide-in2.active {
+  transform: translateX(0);
+}
 
 .project-layer {
   transition: 0.5s ease;
