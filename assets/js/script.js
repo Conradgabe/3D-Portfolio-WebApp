@@ -128,12 +128,16 @@ function checkVisibility() {
   elements.forEach((el) => {
     if (isElementInViewport(el)) {
       el.classList.add("visible");
+    } else {
+      el.classList.remove("visible");
     }
   });
 
   elementsTwo.forEach((el) => {
     if (isElementInViewport(el)) {
       el.classList.add("active");
+    } else {
+      el.classList.remove("ative");
     }
   });
 }
