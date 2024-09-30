@@ -501,14 +501,6 @@ body.active {
   font-size: 2.5rem;
 }
 
-.slide-in {
-  transform: translateX(100vw);
-}
-
-.slide-in.visible {
-  transform: translateX(0);
-}
-
 .service-box i {
   margin: 0.5em auto 0.2em;
   font-size: 4rem;
@@ -553,15 +545,6 @@ body.active {
 /* .project-box:hover .img1 {
   transform: scale(1.1);
 } */
-
-.slide-in2 {
-  transform: translateX(100vw);
-  transition: all 1s ease-in-out;
-}
-
-.slide-in2.active {
-  transform: translateX(0);
-}
 
 .project-layer {
   transition: 0.5s ease;
@@ -672,6 +655,29 @@ input {
 .contact-container a {
   width: 8em;
   margin: 1em 0 2em;
+}
+
+@media (max-width: 1217px) {
+  html {
+    max-width: 100%;
+  }
+
+  .slide-in {
+    transform: translateX(100vw);
+  }
+
+  .slide-in.visible {
+    transform: translateX(0);
+  }
+
+  .slide-in2 {
+    transform: translateX(100vw);
+    transition: all 1s ease-in-out;
+  }
+
+  .slide-in2.active {
+    transform: translateX(0);
+  }
 }
 
 @media (max-width: 437px) {
@@ -895,7 +901,7 @@ input {
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 1217px) {
   .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
