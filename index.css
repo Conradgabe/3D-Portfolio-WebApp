@@ -660,10 +660,11 @@ input {
 @media (max-width: 1217px) {
   html {
     width: 100%;
+    overflow-x: hidden;
   }
 
   .slide-in {
-    transform: translateX(100vw);
+    transform: translateX(100%);
   }
 
   .slide-in.visible {
@@ -671,7 +672,7 @@ input {
   }
 
   .slide-in2 {
-    transform: translateX(100vw);
+    transform: translateX(100%);
     transition: all 1s ease-in-out;
   }
 
@@ -839,7 +840,7 @@ input {
 
   .contact-me {
     display: grid;
-    grid-template-columns: 23em 23em;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
 
     align-items: center;
